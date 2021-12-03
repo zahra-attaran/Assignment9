@@ -1,0 +1,716 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.containerSet {
+    margin: 20px 40px;
+}
+
+.ImgHero {
+    background-image: url("Images/hero-image.png");
+    background-repeat: no-repeat;
+    background-position: -100px 200px;
+}
+
+.header {
+    direction: ltr;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.logoSnappFood {
+    max-width: 150px;
+}
+
+.btns {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnLogin ,.btnLink ,.btnSabtNam{
+    background-color: rgb(255, 0, 166);
+    border: 2px solid rgb(255, 0, 166);
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btnLogin:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 56, 172);
+    border-color: rgb(255, 56, 172);
+}
+
+.SellersRegistration {
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contentHeader .sefaresh {
+    font-size: 46px;
+    width: max-content;
+    display: inline-block;
+}
+
+.secvar {
+    display: inline-block;
+}
+
+.vaiable {
+    display: block;
+    width: 100px;
+    height: 10px;
+    /*background: red;*/
+    font-size: 46px;
+    position: relative;
+    color: rgb(255, 0, 166);;
+}
+
+.vaiable1 {
+    animation: mymove1 10s infinite;
+    animation-delay: 2s;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.vaiable2 {
+    animation: mymove2 10s infinite;
+    animation-delay: 4s;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.vaiable3 {
+    animation: mymove3 10s infinite;
+    animation-delay: 6s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.vaiable4 {
+    animation: mymove4 10s infinite;
+    animation-delay: 8s;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.vaiable5 {
+    animation: mymove5 10s infinite;
+    animation-delay: 10s;
+    opacity: 0;
+}
+
+@keyframes mymove1 {
+    0% {
+        top: 0px;
+        color: red;
+        opacity: 1;
+    }
+    20% {
+        top: 10px;
+        color: white;
+    }
+    100% {
+        top: 50px;
+        color: white;
+    }
+}
+
+@keyframes mymove2 {
+    0% {
+        top: 0px;
+        color: red;
+        opacity: 1;
+    }
+    20% {
+        top: 10px;
+        color: white;
+    }
+    100% {
+        top: 50px;
+        color: white;
+    }
+}
+
+@keyframes mymove3 {
+    0% {
+        top: 0px;
+        color: red;
+        opacity: 1;
+    }
+    20% {
+        top: 10px;
+        color: white;
+    }
+    100% {
+        top: 50px;
+        color: white;
+    }
+}
+
+@keyframes mymove4 {
+    0% {
+        top: 0px;
+        color: red;
+        opacity: 1;
+    }
+    20% {
+        top: 10px;
+        color: white;
+    }
+    100% {
+        top: 50px;
+        color: white;
+    }
+}
+
+@keyframes mymove5 {
+    0% {
+        top: 0px;
+        color: red;
+        opacity: 1;
+    }
+    20% {
+        top: 10px;
+        color: white;
+    }
+    100% {
+        top: 50px;
+        color: white;
+    }
+}
+
+.menu a:hover img {
+    transform: scale(1.5);
+    transition: 1s ease-in-out all;
+}
+
+.contentHeader p {
+    font-size: 18px;
+    color: #666666;
+}
+
+.contentHeader {
+    display: block;
+    text-align: right;
+    direction: rtl;
+    margin-right: 100px;
+}
+
+.address {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #666666;
+    border-radius: 30px;
+    width: 27%;
+    padding: 10px;
+}
+
+.address span {
+    color: silver;
+}
+
+.address p {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    color: silver;
+}
+
+.btnsearch {
+    background-color: rgb(255, 0, 166);
+    border-radius: 50%;
+    color: silver;
+    padding: 10px;
+}
+
+.Category {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.itemCustomers {
+    border-radius: 20px;
+    width: 16.66%;
+    display: inline-block;
+}
+
+.cardCustomers {
+
+    /*border-radius: 20px;*/
+    height: 20vh;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+
+.cardCustomers img {
+
+    width: 100%;
+    border-radius: 20px;
+    height: 15vh;
+
+}
+
+.rec {
+    /*direction: ltr;*/
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    display: flex;
+    width: 50%;
+    /*height: 4vh;*/
+    padding: 10px 0px;
+    background-color: white;
+    border-bottom-right-radius: 17px;
+    border-top-left-radius: 17px;
+}
+
+.bozorgtar {
+    font-size: 20px;
+    color: rgb(255, 0, 166);
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+
+.rec:hover .bozorgtar {
+    margin-right: 15px;
+}
+
+.menu {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffffa3;
+    padding: 20px 10px;
+    overflow-x: auto;
+
+}
+
+.menu a img {
+    width: 40%;
+    text-align: center;
+    transform: scale(1);
+    transition: 1s ease-in-out all;
+}
+
+.menu a {
+    text-align: center;
+    text-decoration: none;
+    color: #666666;
+    min-width: 70px;
+
+}
+
+.AboutUs {
+    margin-top: 200px;
+    height: 60vh;
+    background-color: rgb(235, 237, 240);
+    border-bottom-right-radius: 70px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.secNum {
+    margin-top: 50px;
+}
+
+.phoneNumber {
+display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    width: 55%;
+    padding: 0px;
+
+}
+
+.phoneNumber input {
+    height: 5vh;
+    margin: 5px;
+    border: 2px solid transparent;
+}
+
+.imageAbout {
+    width: 40%;
+    position: relative;
+}
+
+.contentAbout {
+    width: 60%;
+    margin: 20px 150px;
+
+}
+
+.contentAbout h1 {
+    font-size: 36px;
+}
+
+.contentAbout div {
+    font-size: 20px;
+    color: #666666;
+}
+
+.imageAbout img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 18%;
+}
+
+.work {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 10px;
+}
+
+.kasbOKar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kasbOKar h1 {
+    font-size: 36px;
+}
+
+.kasbOKar p {
+    font-size: 24px;
+    color: #666666;
+}
+
+.line {
+    border-bottom: 2px solid silver;
+}
+
+.secCity {
+    direction: rtl;
+}
+
+.cities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+.zhra {
+    width: 8.33%;
+    padding: 5px 0px;
+}
+
+.zhra a {
+    text-decoration: none;
+    color: #666666;
+
+}
+
+
+.Footer {
+    display: flex;
+    background-color: #ffe6ff;
+    margin-top: 80px;
+    direction: rtl;
+}
+
+.Footersec1 {
+    width: 30%;
+}
+
+.Footersec2 {
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footersec2 li {
+    list-style: none;
+    margin: 20px;
+}
+
+.Footersec2 li a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 16px;
+}
+
+.Footersec3 {
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footersec3 li {
+    list-style: none;
+    margin: 20px;
+}
+
+.Footersec3 li a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 16px;
+}
+
+.Footersec4 {
+    width: 22%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+}
+
+.head img {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.icons {
+    margin: 50px 0px;
+}
+
+.icons button {
+    border-radius: 50%;
+    padding: 8px;
+    background-color: white;
+    border: 2px solid white;
+    box-shadow: 5px 10px 18px white;
+    margin: 10px 3px;
+}
+
+.icons i {
+    color: #666666;
+}
+
+@media only screen and (max-width: 1200px) {
+    .ImgHero {
+        background-position: -500px 200px;
+    }
+
+    .address {
+        width: 40%;
+    }
+
+    .imageAbout img {
+        left: 40px;
+        bottom: 30%;
+    }
+
+    .Category {
+        justify-content: center;
+    }
+
+    .itemCustomers {
+        width: 20%;
+    }
+
+    .contentAbout div {
+        width: 85%;
+    }
+
+    .phoneNumber {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .zhra {
+        width: 20%;
+    }
+
+    .icons {
+        margin: 0px;
+    }
+
+    .icons button {
+        border-radius: 50%;
+        padding: 5px;
+        background-color: white;
+        border: 2px solid white;
+        box-shadow: 5px 10px 18px white;
+        margin: 10px 1px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .ImgHero {
+        background-position: -700px 200px;
+    }
+
+    .address {
+        width: 50%;
+    }
+
+    .imageAbout {
+        display: none;
+        width: 0px;
+    }
+
+    .contentAbout {
+        width: 100%;;
+    }
+
+    .AboutUs {
+        height: auto;
+    }
+
+    .phoneNumber {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contentAbout h1 {
+        font-size: 24px;
+    }
+
+    .Category {
+        justify-content: center;
+    }
+
+    .itemCustomers {
+        width: 25%;
+        box-shadow: 0px 2px 10px gray;
+    }
+
+    .contentAbout div {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .zhra {
+        width: 25%;
+    }
+
+    .icons {
+        margin: 0px;
+    }
+
+    .icons button {
+        border-radius: 50%;
+        padding: 5px;
+        background-color: white;
+        border: 2px solid white;
+        box-shadow: 5px 10px 18px white;
+        margin: 10px 1px;
+    }
+
+    .Footersec1 {
+        width: 100%;
+    }
+
+    .Footersec2, .Footersec3 {
+        width: 33%;
+    }
+}
+
+.btnperson {
+    display: none;
+    background-color: transparent;
+    border: 2px solid transparent;
+    font-size: 22px;
+
+}
+
+
+@media only screen and (max-width: 768px ) {
+
+    .btnLogin {
+        display: none;
+    }
+
+    .SellersRegistration {
+        display: none;
+    }
+
+    .btnperson {
+        display: inline;
+    }
+
+    .sefaresh {
+        font-size: 26px !important;
+    }
+
+    .vaiable {
+        font-size: 26px;
+
+    }
+.btnLink{
+    width: 35%;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+.btnSabtNam{
+width: 80%;
+}
+    .phoneNumber input {
+        width: 65%;
+    }
+
+    .contentHeader p {
+        font-size: 16px !important;
+
+    }
+.address{
+    width: 90%;
+}
+    .contentHeader {
+        margin-right: 0px;
+    }
+
+    .itemCustomers {
+        width: 50%;
+    }
+
+    .contentAbout {
+        margin: 20px;
+    }
+
+    .kasbOKar h1 {
+        font-size: 30px;
+    }
+
+    .workImg {
+        display: none;
+    }
+
+    .zhra {
+        width: 33%;
+    }
+
+    .Footer {
+        flex-wrap: wrap;
+    }
+
+    .phoneNumber {
+        margin: 10px;
+    }
+    .Footersec2, .Footersec3, .Footersec4{
+        width: 100%;
+    }
+    .Footersec4{
+        justify-content: center;
+    }
+}
